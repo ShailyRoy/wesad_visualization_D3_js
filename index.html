@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KAN You See the Bias?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="left-panel">
+            <!-- Introduction Section -->
+            <section data-step="0">
+                <h2>Introduction to WESAD Dataset</h2>
+                <p>
+                    The WESAD dataset is a multimodal dataset designed for wearable stress and affect detection. 
+                    It includes data from 15 participants aged between 24-35, with a mix of males and females.
+                </p>
+                <p>
+                    • Number of males: 12<br>
+                    • Number of females: 3<br>
+                    • Dominant hand distribution: 14 right-handed, 1 left-handed
+                </p>
+                <p>The glyphs in the visualization represent individual participants and are created based on their demographic information, such as 
+                    color based on gender, brightness based on age, length based on height, thickness and head size based on weight, and position of hand based on dominant hand. The glyphs are visual representations where each participant is depicted using 
+                    a simple figure. The figure's characteristics vary according to these attributes, helping to provide 
+                    a visual comparison of the participants. Hover on glyphs to see the details of each participant and Scroll to explore individual participants and their physiological data.</p>
+            </section>
+
+            <!-- Participant Sections -->
+            <section data-step="1">
+                <h2>Participant 2</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 27<br>
+                    • Height: 175 cm<br>
+                    • Weight: 80 kg<br>
+                    • Dominant Hand: Right
+                </p>
+
+                <p>
+                    Physiological data reveals moderate EDA activity with noticeable peaks and valleys, indicating varying stress or arousal levels. The BVP graph shows regular oscillations with a few significant spikes, suggesting consistent cardiac activity with moments of increased activity. The temperature data is relatively stable, fluctuating between 35 and 36 degrees Celsius, reflecting consistent thermoregulation.
+                </p>
+    
+            </section>
+
+            <section data-step="2">
+                <h2>Participant 3</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 27<br>
+                    • Height: 173 cm<br>
+                    • Weight: 69 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 3's EDA shows an early spike followed by a decline, stabilizing afterward, indicating an initial stress response tapering off. The BVP graph displays typical fluctuations with some spikes, representing relatively stable cardiac activity. The temperature graph shows a consistent decline from 33 to 31 degrees Celsius, possibly reflecting relaxation or cooling.
+
+                </p>
+
+
+            </section>
+
+            <section data-step="3">
+                <h2>Participant 4</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 25<br>
+                    • Height: 175 cm<br>
+                    • Weight: 90 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 4's EDA shows a steep rise followed by a sharp drop, possibly signaling a significant stress or arousal episode. The BVP data is marked by moderate oscillations and a few notable spikes, indicating regular cardiac patterns with intermittent increases. The temperature decreases steadily from 33 to 31.5 degrees Celsius, suggesting a cooling effect over time.
+                </p>
+
+            </section>
+
+            <section data-step="4">
+                <h2>Participant 5</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 35<br>
+                    • Height: 189 cm<br>
+                    • Weight: 80 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 5's EDA graph exhibits a significant peak around the middle, suggesting a strong stress or arousal response. The BVP data shows regular oscillations with pronounced spikes, reflecting heightened cardiac activity at times. The temperature data demonstrates a gradual decline from 36 to 30 degrees Celsius, indicating a cooling phase or relaxation.
+                </p>
+
+            </section>
+
+            <section data-step="5">
+                <h2>Participant 6</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 27<br>
+                    • Height: 170 cm<br>
+                    • Weight: 66 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 6's EDA displays multiple peaks, indicating recurring stress or arousal episodes throughout the measurement period. The BVP graph has regular fluctuations with some notable spikes, representing steady cardiac patterns. The temperature data shows an upward trend initially, peaking at 34 degrees Celsius before declining, suggesting alternating
+                </p>
+
+            </section>
+
+            <section data-step="6">
+                <h2>Participant 7</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 28<br>
+                    • Height: 184 cm<br>
+                    • Weight: 74 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 7's EDA shows sustained peaks early on, stabilizing later, indicating initial stress followed by relaxation. The BVP graph displays consistent oscillations with few prominent spikes, reflecting a steady cardiac state. The temperature graph reveals a gradual decline from 35 to 30 degrees Celsius, suggesting cooling or relaxation.
+                </p>
+
+            </section>
+
+            <section data-step="7">
+                <h2>Participant 8</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Female<br>
+                    • Age: 27<br>
+                    • Height: 172 cm<br>
+                    • Weight: 64 kg<br>
+                    • Dominant Hand: Left
+                </p>
+                <p>
+                    Participant 8's EDA shows a significant rise followed by stabilization, indicating a strong initial stress response. The BVP graph displays frequent spikes, suggesting active cardiac engagement. The temperature remains relatively stable, hovering between 33.5 and 32 degrees Celsius, indicating steady thermoregulation.
+                </p>
+
+            </section>
+
+            <section data-step="8">
+                <h2>Participant 9</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 26<br>
+                    • Height: 181 cm<br>
+                    • Weight: 75 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 9's EDA graph displays a moderate rise and fall, signaling an arousal period followed by relaxation. The BVP graph shows consistent fluctuations with minor spikes, representing steady cardiac activity. The temperature graph exhibits a slight downward trend, suggesting gradual cooling.
+                </p>
+
+            </section>
+
+            <section data-step="9">
+                <h2>Participant 10</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Male<br>
+                    • Age: 28<br>
+                    • Height: 178 cm<br>
+                    • Weight: 76 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 10's EDA reveals a sharp peak followed by stabilization, indicating a brief stress episode. The BVP graph shows consistent oscillations with occasional spikes, reflecting regular cardiac activity. The temperature graph shows a gradual decrease from 35 to 31 degrees Celsius, indicating cooling or relaxation.
+                </p>
+ 
+            </section>
+
+            <section data-step="10">
+                <h2>Participant 11</h2>
+                <p>
+                    <strong>Demographics:</strong><br>
+                    • Gender: Female<br>
+                    • Age: 26<br>
+                    • Height: 171 cm<br>
+                    • Weight: 54 kg<br>
+                    • Dominant Hand: Right
+                </p>
+                <p>
+                    Participant 11's EDA data displays prominent peaks, suggesting periodic stress responses. The BVP graph reveals steady oscillations with occasional spikes, indicating stable cardiac activity. The temperature data shows a consistent downward trend, reflecting cooling or relaxation over time.
+                </p>
+
+            </section>
+
+        <section data-step="11">
+            <h2>Participant 13</h2>
+            <p>
+                <strong>Demographics:</strong><br>
+                • Gender: Male<br>
+                • Age: 28<br>
+                • Height: 181 cm<br>
+                • Weight: 82 kg<br>
+                • Dominant Hand: Right
+            </p>
+            <p>
+                Participant 13's EDA shows a pronounced rise and fall, suggesting a stress or arousal episode. The BVP graph displays steady oscillations with intermittent spikes, indicating regular cardiac patterns. The temperature graph fluctuates initially before declining from 35 to 33 degrees Celsius, signaling cooling or relaxation.
+            </p>
+
+
+        </section>
+
+        <section data-step="12">
+            <h2>Participant 14</h2>
+            <p>
+                <strong>Demographics:</strong><br>
+                • Gender: Male<br>
+                • Age: 27<br>
+                • Height: 180 cm<br>
+                • Weight: 80 kg<br>
+                • Dominant Hand: Right
+            </p>
+            <p>
+                Participant 14's EDA graph shows multiple peaks, indicating recurring stress or arousal episodes. The BVP data reveals consistent oscillations with noticeable spikes, reflecting stable cardiac activity. The temperature graph demonstrates a steady decline from 33 to 31.5 degrees Celsius, indicating cooling.
+            </p>
+
+        </section>
+
+        <section data-step="13">
+            <h2>Participant 15</h2>
+            <p>
+                <strong>Demographics:</strong><br>
+                • Gender: Male<br>
+                • Age: 28<br>
+                • Height: 186 cm<br>
+                • Weight: 83 kg<br>
+                • Dominant Hand: Right
+            </p>
+            <p>
+                Participant 15's EDA data displays a significant rise followed by stabilization, indicating a strong stress response. The BVP graph reveals steady fluctuations with prominent spikes, representing active cardiac engagement. The temperature data shows a gradual decline from 30.5 to 29 degrees Celsius, indicating cooling or relaxation.
+            </p>
+
+        </section>
+
+        <section data-step="14">
+            <h2>Participant 16</h2>
+            <p>
+                <strong>Demographics:</strong><br>
+                • Gender: Male<br>
+                • Age: 24<br>
+                • Height: 184 cm<br>
+                • Weight: 69 kg<br>
+                • Dominant Hand: Right
+            </p>
+            <p>
+                Participant 16's EDA reveals a sharp peak, suggesting a significant stress or arousal episode. The BVP graph displays steady oscillations with occasional spikes, reflecting stable cardiac activity. The temperature graph shows an upward trend before declining, indicating alternating thermoregulation phases.
+            </p>
+
+        </section>
+
+        <section data-step="15">
+            <h2>Participant 17</h2>
+            <p>
+                <strong>Demographics:</strong><br>
+                • Gender: Female<br>
+                • Age: 29<br>
+                • Height: 165 cm<br>
+                • Weight: 55 kg<br>
+                • Dominant Hand: Right
+            </p>
+            <p>
+                Participant 17's EDA displays a sharp decline after an initial peak, indicating an early stress response tapering off. The BVP graph reveals consistent oscillations with a few pronounced spikes, reflecting regular cardiac patterns. The temperature data shows a gradual decline from 33.5 to 32 degrees Celsius, signaling relaxation or cooling.
+            </p>
+
+        </section>
+    </div>
+
+        <!-- Right Panel -->
+        <div id="right-panel">
+            <div id="visualization"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

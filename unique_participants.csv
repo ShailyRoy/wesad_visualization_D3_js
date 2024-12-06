@@ -1,0 +1,16 @@
+subject,age,gender,dominant_hand,weight_kg,height_cm
+2,27,male,right,80,175
+3,27,male,right,69,173
+4,25,male,right,90,175
+5,35,male,right,80,189
+6,27,male,right,66,170
+7,28,male,right,74,184
+8,27,female,left,64,172
+9,26,male,right,75,181
+10,28,male,right,76,178
+11,26,female,right,54,171
+13,28,male,right,82,181
+14,27,male,right,80,180
+15,28,male,right,83,186
+16,24,male,right,69,184
+17,29,female,right,55,165
