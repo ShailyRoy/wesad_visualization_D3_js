@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  #visualization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .highlighted circle {
+    stroke: yellow;
+    stroke-width: 3px;
+  }
+  
+  svg {
+    border: 1px solid #ddd;
+  }
+  
+  #boxplot {
+    padding: 20px;
+  }
+  
